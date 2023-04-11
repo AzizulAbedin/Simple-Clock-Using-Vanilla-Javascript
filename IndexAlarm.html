@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- # Alarm Clock using vanilla JavaScript -->
+    <title>Alarm Clock using vanilla JavaScript </title>
+    <link rel="stylesheet" href="alarm.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- **Alarm Clock Interface** -->
+    <div class="alarm-box">
+      <!-- ![Clock Image](clock1.jpg) -->
+      <img src="clock1.jpg" alt="Clock Image">
+      <!-- Current Time: **00:00:00 PM** -->
+      <h1>00:00:00 PM</h1>
+      <!-- **Set Alarm Time:**
+        Hour | Minute | AM/PM -->
+      <div class="content">
+        <div class="column">
+          <select>
+            <option value="Hour" selected disabled hidden>Hour</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="Minute" selected disabled hidden>Minute</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+          </select>
+        </div>
+      </div>
+      <!-- [Set Alarm](#) -->
+      <button>Set Alarm</button>
+      <!-- <p style="color: #dad7d7;">Author: Azizul Abedin</p> -->
+    </div>
+    
+    <script src="alarm.js"></script>
+    
+  </body>
+</html>
