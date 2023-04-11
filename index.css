@@ -1,0 +1,97 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* Reset default styles and set font-family */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* Set up flexbox for body, .alarm-box, and .content */
+body, .alarm-box, .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ /* Styling for body */
+body{
+  padding: 0 10px;
+  min-height: 100vh;
+  background: rgba(20, 21, 38,0.8);
+}
+ /* Styling for .alarm-box */
+.alarm-box{
+  width: 75vw;
+    background: rgb(20, 21, 38);
+    padding: 35px 35px 43px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #dad7d7;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    flex-direction: column;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5),
+    -5px 53px 11px rgba(255, 255, 255, 0.09);
+}
+ /* Styling for image inside .alarm-box */
+.alarm-box img{
+  max-width: 175px;
+}
+ /* Styling for h1 inside .alarm-box */
+.alarm-box h1{
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 450;
+  color: rgba(131, 112, 218, 0.685);
+  margin: 30px 0;
+}
+ /* Styling for .content */
+.alarm-box .content{
+  width: 100%;
+  justify-content: space-between;
+}
+ /* Styling for .content when disabled */
+.content.disable{
+  cursor: no-drop;
+}
+ /* Styling for .column inside .content */
+.content .column{
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: calc(100% / 3 - 5px);
+   background: #d6a6a6e2;
+}
+ /* Styling for .column inside .content when disabled */
+.content.disable .column{
+  opacity: 0.8;
+  pointer-events: none;
+}
+ /* Styling for select element inside .column */
+.column select{
+  width: 100%;
+  height: 53px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 15px;
+}
+ /* Styling for button inside .alarm-box */
+.alarm-box button{
+  padding: 17px 0;
+  margin: 20px 0;
+  width: 100%;
+  background: rgba(213, 178, 132, 0.959);
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 550;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: 2px solid rgb(20, 21, 38);
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.5),
+  -3px -3px 7px rgba(255, 255, 255, 0.09);
+  
+}
